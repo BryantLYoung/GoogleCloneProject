@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Header from "./api/Header";
-import { API_KEY, CONTEXT_KEY } from "../keys";
 import { useRouter } from "next/router";
 import SearchResults from "./api/SearchResults";
+
+var API_KEY = process.env.API_KEY;
+var CONTEXT_KEY = process.env.CONTEXT_KEY;
 
 function Search({ results }) {
   const router = useRouter();
